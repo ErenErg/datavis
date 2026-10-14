@@ -73,15 +73,36 @@ Create separate functions, that display the following, each in their own `r` cod
 {|task)}
 
 ```elm {l r}
--- Place your first name function here inside the code block.
+myFirstName : String
+myFirstName = "Eren"
 ```
 
 ```elm {l r}
--- Place your last name function here inside the code block.
+myLastName : String
+myLastName = "Erguvan"
 ```
 
 ```elm {l r}
--- Place your commuting minutes function here inside the code block.
+commutingMinutes : Int
+commutingMinutes = 60
+```
+
+```elm {l r}
+piValue : Float
+piValue =
+    3.141
+```
+
+```elm {l r}
+dataVizQuote : String
+dataVizQuote =
+    "The purpose of visualization is insight, not pictures."
+```
+
+```elm {l r}
+choleraYear : Int
+choleraYear =
+    1854
 ```
 
 ## 1.2. Simple functions with operators

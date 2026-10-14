@@ -10,9 +10,9 @@ id: litvis
 
 _Important: Please Add you name and City email address below and stage/commit/push to your Github repo._
 
-## Name: (replace with you name here)
+## Name: Eren Erguvan
 
-## City Email: (replace with your email here)
+## City Email: eren.erguvan@city.ac.uk
 
 ---
 
