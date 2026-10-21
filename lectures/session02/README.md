@@ -92,7 +92,13 @@ To see an example of such iterative process, spend some minutes reading the [fiv
 
 {(annotation|}
 
-Add your answers here.
+I think around 3 design alternatives is a good number to come out of an initial brainstorming exercise. It gives enough variety to compare different ideas without creating so many that the process becomes confusing or takes too long.
+
+I mostly agree with Corum's statement that "the goal of the design process is to find a clear thought and then show it." A visualization should have a clear purpose, otherwise it can become visually interesting but not actually communicate anything useful.
+
+I also agree that visualization is not just counting. Simply displaying numbers does not necessarily help the user understand anything. The more useful part is showing patterns, changes, comparisons or relationships in the data.
+
+In terms of Bloom's taxonomies, Corum's approach goes beyond simply remembering or perceiving information. It fits more with understanding, analysing and possibly evaluating because the user is meant to identify and interpret meaningful patterns.
 
 {|annotation)}
 
@@ -255,7 +261,11 @@ Is this a data visualization? What elements of it embrace _data humanism_ and _f
 
 {(annotation|}
 
-Add your answers here.
+I would consider the Train Delay Scarf a data visualization because the colours and knitted sections represent information about train delays over time.
+
+It fits data humanism because it turns personal experience into something physical and handmade rather than using a normal computer-generated chart. The fact that it is knitted also shows the time and effort involved in recording and representing the data.
+
+It also connects with feminist data visualization for me because it focuses on lived experience and gives importance to personal context rather than treating the data as completely detached and objective.
 
 {|annotation)}
 
@@ -273,7 +283,11 @@ Can the approach represented by Lupi and Posavec in _Dear Data_ be reconciled wi
 
 {(annotation|}
 
-Add your answers here.
+I think Dear Data can still fit with Corum's idea that "visualization is not counting." Although the project involves recording many small events, the aim is not just to count them. The hand-drawn visualizations are used to show patterns and reflect on personal behaviour.
+
+Personal visualization also feels different from larger data visualization because the person creating it is directly connected to the data. It can include emotions, habits and context that would usually be lost in a larger dataset.
+
+This makes the visualization more subjective, but also more personal and meaningful.
 
 {|annotation)}
 
@@ -372,7 +386,13 @@ Identify the "data ink" and "non-data ink" in the graphics above. Would you cons
 
 {(annotation|}
 
-Add your answers here.
+The data ink is the part of the visualization that directly represents the data, such as bars, lines or values.
+
+Non-data ink includes things like backgrounds, borders, decorative images, unnecessary labels or shapes that do not directly represent the data.
+
+Some non-data ink can be useful if it improves readability, but if it does not help the user understand the data, it could be considered chart junk.
+
+I think chart junk is sometimes used to make a visualization look more interesting or attractive, even if it does not improve the actual communication of the data.
 
 {|annotation)}
 
@@ -398,7 +418,11 @@ What is the lie factor of the following [visualization produced by the BBC](http
 
 {(annotation|}
 
-Add your answer here.
+The BBC graphic has a lie factor because the visual difference shown appears larger than the actual difference in the data.
+
+This means the graphic exaggerates the effect and could make the viewer think the change is more significant than it really is.
+
+The main problem is that the size of the visual elements is not directly proportional to the size of the values being represented.
 
 {|annotation)}
 
