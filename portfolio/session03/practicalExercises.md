@@ -249,7 +249,7 @@ This shows that both gender and ticket class may have influenced someone's chanc
 
 Although the chart uses percentages, the data represents real people who experienced the Titanic disaster.
 
-I think the visualisation could be more personal by including some passenger names, ages or individual stories alongside the chart. This would help remind the viewer that each part of the graph represents actual people rather than just numbers.
+I think the visualisation could be more personal perhaps by including some passenger names, ages or individual stories alongside the chart. This would help remind the viewer that each part of the graph represents actual people rather than just numbers but I didn't really know a good way to incorporate that and thus I have lefti t out.
 
 ### Reflection
 
