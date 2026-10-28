@@ -48,6 +48,42 @@ Create separate functions, each in their own code block, that display the follow
 
 {|task)}
 
+```elm {l r}
+cities : List String
+cities =
+    [ "New York", "Istanbul", "Alesund", "Osaka" ]
+```
+
+```elm {l r}
+integers : List Int
+integers =
+    [ 70, 71, 72, 73, 74, 75 ]
+```
+
+```elm {l r}
+triangularNumbers : List Int
+triangularNumbers =
+    [ 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 91 ]
+```
+
+```elm {l r}
+fractions : List Float
+fractions =
+    [ 1 / 1, 1 / 2, 1 / 3, 1 / 4, 1 / 5 ]
+```
+
+```elm {l r}
+rainbow : List String
+rainbow =
+    [ "Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet" ]
+```
+
+```elm {l r}
+eightLeggedMammals : List String
+eightLeggedMammals =
+    []
+```
+
 ## 2.2. In-built functions to generate lists
 
 Elm has a number of functions that make it easier to create lists. In particular [List.range](https://package.elm-lang.org/packages/elm/core/latest/List#range) for creating a range of integers; [List.repeat](https://package.elm-lang.org/packages/elm/core/latest/List#repeat) for creating a list of repeated items, the [cons operator `::`](<https://package.elm-lang.org/packages/elm/core/latest/List#(::)>) for adding an item to a list and the [++](https://package.elm-lang.org/packages/elm/core/latest/Basics#++) operator for combining two lists. For example:
@@ -85,6 +121,38 @@ Choosing from the list-generating functions above, create separate functions to 
 
 {|task)}
 
+```elm {l r}
+years : List Int
+years =
+    List.range 1992 2023
+```
+
+```elm {l r}
+negativeIntegers : List Int
+negativeIntegers =
+    List.range -250 -88
+```
+
+```elm {l r}
+travellers : List String
+travellers =
+    "Eren" :: [ "Ripley", "Vasquez", "Bishop", "Burke" ]
+```
+
+```elm {l r}
+dozens : List String
+dozens =
+    List.repeat 6 "dozen"
+```
+
+```elm {l r}
+combinedList : List String
+combinedList =
+    [ "Cat", "Dog", "Horse" ]
+        ++ [ "Carrot", "Potato", "Onion" ]
+        ++ [ "Gold", "Silver", "Iron" ]
+```
+
 ## 2.3. Summarising Lists
 
 Elm has some in-built functions that can summarise the contents of a list including [List.length](https://package.elm-lang.org/packages/elm/core/latest/List#length), [List.sum](https://package.elm-lang.org/packages/elm/core/latest/List#sum) and [List.product](https://package.elm-lang.org/packages/elm/core/latest/List#product). For example:
@@ -116,6 +184,31 @@ Using the list-summarising functions above, create separate functions to calcula
 
 {|task)}
 
+```elm {l r}
+totalIntegers : Int
+totalIntegers =
+    List.sum (List.range -250 -88)
+```
+
+```elm {l r}
+numberOfTravellers : Int
+numberOfTravellers =
+    List.length ([] ++ [ "Ripley", "Vasquez", "Bishop", "Burke" ])
+```
+
+```elm {l r}
+meanIntegers : Float
+meanIntegers =
+    toFloat (List.sum (List.range -250 -88))
+        / toFloat (List.length (List.range -250 -88))
+```
+
+```elm {l r}
+factorialSeven : Int
+factorialSeven =
+    List.product (List.range 1 7)
+```
+
 ## 2.4 Tuples
 
 Sometimes we might wish to operate on a very small collection of items rather than a list of unspecified length. For this we can use a [tuple](https://package.elm-lang.org/packages/elm/core/latest/Tuple) which can contain two or three items only. An unlike a list, the items do not need to be of the same type.
@@ -137,3 +230,21 @@ Create functions that return tuples or lists of tuples that represent:
 - A list of 2d coordinates (i.e. each coordinate requiring a pair of coordinate values, but a number of them)
 
 {|task)}
+
+```elm {l r}
+myCommute : ( String, Int )
+myCommute =
+    ( "Eren", 60 )
+```
+
+```elm {l r}
+point3D : ( Int, Int, Int )
+point3D =
+    ( 3, 5, 7 )
+```
+
+```elm {l r}
+coordinates2D : List ( Int, Int )
+coordinates2D =
+    [ ( 1, 2 ), ( 3, 4 ), ( 5, 6 ) ]
+```

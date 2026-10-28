@@ -87,7 +87,17 @@ Because of this, I think the design follows Tufte's principles in reducing unnec
 
 ## Q2. Creating a Minimalist Tufte Visualization
 
-I have completed Q2 and added all the files to session02 of my portfolio.
+I have completed Q2 and added all the files to session02 of my portfolio. Below I have put my minimal histogram evaluation:
+
+## Evaluation
+
+I removed the colour encoding, axis titles, tick marks and chart border to make the visualization more minimal.
+
+I think removing the colour works well because the IMDB rating is already represented on the x-axis, so the colour was repeating information that was already shown. Removing the border and some axis details also makes the chart look less cluttered.
+
+However, removing too much information can make the chart harder to understand. I kept the basic axis values because they are still needed to understand the ratings and frequency of films.
+
+Overall, I think the minimalist version is easier to read, but some non-data ink is still useful when it helps the viewer understand the graph.
 
 ## Q3. Creativity Challenge
 

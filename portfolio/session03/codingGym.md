@@ -54,6 +54,76 @@ Create separate parameterised functions, each in their own code block, that do t
 
 {|task)}
 
+**Q1. Two words separated by "or"**
+
+```elm {l}
+joinWords : String -> String -> String
+joinWords word1 word2 =
+    word1 ++ " or " ++ word2
+```
+
+```elm {l r}
+testJoinWords : String
+testJoinWords =
+    joinWords "Tea" "Coffee"
+```
+
+**Q2. Second favourite colour**
+
+```elm {l}
+secondColour : String -> String
+secondColour colour =
+    "My second favourite colour is " ++ colour
+```
+
+```elm {l r}
+testColour : String
+testColour =
+    secondColour "Blue"
+```
+
+**Q3. Add three numbers**
+
+```elm {l}
+addThree : Int -> Int -> Int -> Int
+addThree a b c =
+    a + b + c
+```
+
+```elm {l r}
+testAddThree : Int
+testAddThree =
+    addThree 5 10 15
+```
+
+**Q4. Integers from 1 to a number**
+
+```elm {l}
+numbersTo : Int -> List Int
+numbersTo n =
+    List.range 1 n
+```
+
+```elm {l r}
+testNumbersTo : List Int
+testNumbersTo =
+    numbersTo 10
+```
+
+**Q5. Square root of sum of squares**
+
+```elm {l}
+squareRootSum : Float -> Float -> Float
+squareRootSum a b =
+    sqrt (a ^ 2 + b ^ 2)
+```
+
+```elm {l r}
+testSquareRoot : Float
+testSquareRoot =
+    squareRootSum 3 4
+```
+
 ## 3.2. Transforming Lists
 
 Just as we applied operators to individual items, we can apply them to all the items in a list. This is commonly achieved with the in-built function [List.map](https://package.elm-lang.org/packages/elm/core/latest/List#map). This function takes two parameters: the first is the function that will be applied to each item in the list and the second is the list itself. For example to increment all the values in a list by 1 we could do the following:
@@ -85,3 +155,75 @@ Create separate parameterised functions, each in their own code block, that do t
 - A function that given an integer, creates a list of multiples of 5 (5, 10, 15 etc.) from 5 to that integer.
 
 {|task)}
+
+### My Answers – 3.2
+
+**Q1. Add potato to each word**
+
+```elm {l}
+addPotato : List String -> List String
+addPotato words =
+    List.map (\word -> word ++ " potato") words
+```
+
+```elm {l r}
+testPotato : List String
+testPotato =
+    addPotato [ "sweet", "mashed", "baked" ]
+```
+
+**Q2. Add 2023 to each number**
+
+```elm {l}
+add2023 : List Int -> List Int
+add2023 numbers =
+    List.map (\num -> num + 2023) numbers
+```
+
+```elm {l r}
+testAdd2023 : List Int
+testAdd2023 =
+    add2023 [ 1, 2, 3, 4 ]
+```
+
+**Q3. Multiply each number by 5**
+
+```elm {l}
+multiplyByFive : List Int -> List Int
+multiplyByFive numbers =
+    List.map (\num -> num * 5) numbers
+```
+
+```elm {l r}
+testMultiply : List Int
+testMultiply =
+    multiplyByFive [ 1, 2, 3, 4 ]
+```
+
+**Q4. Sum of squares**
+
+```elm {l}
+sumOfSquares : List Int -> Int
+sumOfSquares numbers =
+    List.sum (List.map (\num -> num * num) numbers)
+```
+
+```elm {l r}
+testSquares : Int
+testSquares =
+    sumOfSquares [ 1, 2, 3, 4 ]
+```
+
+**Q5. Multiples of 5**
+
+```elm {l}
+multiplesOfFive : Int -> List Int
+multiplesOfFive n =
+    List.map (\num -> num * 5) (List.range 1 (n // 5))
+```
+
+```elm {l r}
+testMultiples : List Int
+testMultiples =
+    multiplesOfFive 30
+```
