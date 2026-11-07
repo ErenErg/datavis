@@ -32,7 +32,7 @@ You should complete this datavis project proposal by **Sunday 8th November, 5pm 
 
 4. Which London Underground stations experience the highest and lowest passenger demand, and what differences can be identified between central London and outer London stations?
 
-5. How do passenger demand patterns at Oakwood and Angel Underground stations differ, particularly in terms of changes over time, weekday and weekend usage, and peak travel periods?
+5. How do passenger demand patterns at Oakwood and Angel Underground stations differ (Local vs Central), potentially in terms of changes over time, weekday and weekend usage, and peak travel periods?
 
 {|questions)}
 
