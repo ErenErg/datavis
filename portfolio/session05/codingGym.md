@@ -55,6 +55,68 @@ Using Boolean operators, write functions to do the following. You should also ad
 
 {|task)}
 
+### My Answers
+
+**1. Check if a number is positive**
+
+```elm {l}
+isPositive : Int -> Bool
+isPositive n =
+    n > 0
+```
+
+^^^elm r=(isPositive 10)^^^
+
+^^^elm r=(isPositive -5)^^^
+
+**2. Check if a string matches "petrichor"**
+
+```elm {l}
+isPetrichor : String -> Bool
+isPetrichor word =
+    word == "petrichor"
+```
+
+^^^elm r=(isPetrichor "petrichor")^^^
+
+^^^elm r=(isPetrichor "hello")^^^
+
+**3. Check if a number is odd**
+
+```elm {l}
+isOdd : Int -> Bool
+isOdd n =
+    modBy 2 n /= 0
+```
+
+^^^elm r=(isOdd 7)^^^
+
+^^^elm r=(isOdd 8)^^^
+
+**4. Check if a list has at least 2 entries**
+
+```elm {l}
+hasTwoEntries : List Int -> Bool
+hasTwoEntries numbers =
+    List.length numbers >= 2
+```
+
+^^^elm r=(hasTwoEntries [1, 2, 3])^^^
+
+^^^elm r=(hasTwoEntries [5])^^^
+
+**5. Check if a number is even and not divisible by 5**
+
+```elm {l}
+isEvenNotFive : Int -> Bool
+isEvenNotFive n =
+    modBy 2 n == 0 && modBy 5 n /= 0
+```
+
+^^^elm r=(isEvenNotFive 12)^^^
+
+^^^elm r=(isEvenNotFive 10)^^^
+
 ## 5.2. Filtering Lists
 
 Functions that take a value as input and return either `True` or `False` like the ones you have created in the previous task are called _predicates_. They can be usefully applied to a list of items, _filtering_ the values where the predicate is `True`. For example:
@@ -81,3 +143,57 @@ Filter the following lists using the predicates you created in the previous task
 - Provide a list of all the even numbers between 1 and 40 inclusive that are not divisible by 5
 
 {|task)}
+
+### My Answers
+
+**1. Filter positive numbers between -100 and 40**
+
+```elm {l}
+positiveNumbers : List Int
+positiveNumbers =
+    List.filter isPositive (List.range -100 40)
+```
+
+^^^elm r=(positiveNumbers)^^^
+
+**2. Filter words that match "petrichor"**
+
+```elm {l}
+matchingWords : List String
+matchingWords =
+    List.filter isPetrichor
+        [ "pet rich or", "tiddles", "abc123", "systemDefault", "petrichor", "18Jan2023" ]
+```
+
+^^^elm r=(matchingWords)^^^
+
+**3. Filter even numbers between 1 and 40**
+
+```elm {l}
+evenNumbers : List Int
+evenNumbers =
+    List.filter (\n -> not (isOdd n)) (List.range 1 40)
+```
+
+^^^elm r=(evenNumbers)^^^
+
+**4. Filter lists containing at least 2 entries**
+
+```elm {l}
+longerLists : List (List Int)
+longerLists =
+    List.filter hasTwoEntries
+        [ [1,2], [10,11,21,24], [], [0,0,0,0,0,0], [0], [-1,-2,-3] ]
+```
+
+^^^elm r=(longerLists)^^^
+
+**5. Filter even numbers between 1 and 40 that are not divisible by 5**
+
+```elm {l}
+evenNotFiveNumbers : List Int
+evenNotFiveNumbers =
+    List.filter isEvenNotFive (List.range 1 40)
+```
+
+^^^elm r=(evenNotFiveNumbers)^^^
